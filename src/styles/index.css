@@ -51,6 +51,12 @@
 		filter: drop-shadow(0px 0px 4px #fcac5d);
 	}
 
+	.neu2 {
+		background: rgb(227, 235, 248);
+		box-shadow: -2.5px -2.5px 5px #fafbff, 2.5px 2.5px 5px #a6abbd;
+		border-radius: 20px;
+	}
+
 	::-webkit-scrollbar {
 		width: 8px;
 	}

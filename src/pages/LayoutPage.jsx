@@ -32,16 +32,13 @@ const LayoutPage = () => {
 				<Links to='recipes' nombre='Registro Recetas' />
 				<div className='font-bold mt-5'>Recepcion</div>
 				<ul>
-					<Links to='reception' nombre='Recepcion Producto' />
-					<Links to='a' nombre='Verificacion Producto' />
-					<Links to='b' nombre='Conversion Producto' />
-					<Links to='c' nombre='Envio Orden Insumos' />
+					<Links to='reception' nombre='Recepcion Ordenes' />
+					<Links to='conversion' nombre='Conversion Ordenes' />
+					<Links to='send' nombre='Envio/Insumos Orden' />
 				</ul>
 				<div className='font-bold mt-5'>Fabricacion</div>
 				<ul>
-					<Links to='d' nombre='Mezcla' />
-					<Links to='e' nombre='Homogenizacion' />
-					<Links to='f' nombre='Pasteurizacion' />
+					<Links to='mixed' nombre='Procesos' />
 				</ul>
 			</nav>
 			<section

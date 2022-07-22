@@ -5,7 +5,6 @@ const InsumosRow = ({ recipe, setRecipe, value, bd }) => {
 
 	const recipes = [...recipe];
 
-	console.log(bd, value);
 	if (!bd) value = 1;
 
 	const filteredRecipes = recipes.map(recipe => {

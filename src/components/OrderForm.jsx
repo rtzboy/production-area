@@ -1,17 +1,24 @@
-const OrderForm = ({ search, status, setSearch, setStatus }) => (
+const OrderForm = ({
+	search,
+	status,
+	setSearch,
+	setStatus,
+	setRefresh,
+	refresh
+}) => (
 	<form className='mb-4 flex gap-3'>
 		<input
 			onChange={evt => {
 				setSearch(evt.target.value);
 			}}
 			value={search}
-			className='w-[50%] h-7 px-2 inpt italic'
+			className='w-[50%] h-7 px-2 inpt placeholder:italic placeholder:text-sm'
 			placeholder='numero de orden...'
 			type='text'
 		/>
 		<select
 			onChange={evt => {
-				setStatus(evt.target.value);
+				setStatus(Number(evt.target.value));
 			}}
 			value={status}
 			className='w-[30%] h-7 inpt'
@@ -23,6 +30,7 @@ const OrderForm = ({ search, status, setSearch, setStatus }) => (
 		<button
 			onClick={evt => {
 				evt.preventDefault();
+				setRefresh(!refresh);
 			}}
 			className='w-[20%] neumorph active:efftwo'
 		>

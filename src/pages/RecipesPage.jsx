@@ -86,7 +86,9 @@ const RecipesPage = () => {
 					</div>
 				</div>
 				{/* aqui que vaya la info de borrar añadir actualizar o cualquier cosa */}
-				<div className='w-2/5 bg-blue-300'>ga</div>
+				<div className='w-2/5'>
+					<img src={product.urlimage} alt='' />
+				</div>
 			</div>
 		</div>
 	);
